@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="fav_icon.ico">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet">
+    <title>Restaurant-Detox</title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="border">
+            <div class="info-content">
+                <a class="main-logo" href="#"><img src="img/logo.svg" alt="логотип ресторана" width="130" height="36"></a>
+                <a class="location" href="https://yandex.ru/maps/?um=constructor%3A398fca3fc7ccfa6ab0fcb372c86118365543f8167643fabf9dd6b9e12974e05b&source=constructorLink" target="_blank">Тамбов</a>
+                <a class="phone" href="tel:+79156600909">+7 (915) 660 09-09</a>
+                <p class="working-hours">09:00-21:00</p>
+            </div>
+        </div>
+        <nav class="main-navigation main-nav--closed">
+            <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span> </button>
+            <div class="nav-toggle__wrapper">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                            <a href="#">Меню ресторана</a>
+                    </li>
+                    <li class="navigation-item">
+                            <a href="#">Бизнес-ланч</a>
+                    </li>
+                    <li class="navigation-item">
+                            <a href="#">Детокс</a>
+                    </li>
+                    <li class="navigation-item">
+                            <a href="#">Рационы</a>
+                    </li>
+                </ul>
+                <div class="info-toggle">
+                    <a class="location--toggle" href="#">Тамбов</a>
+                    <p class="working-hours--toggle">09:00-21:00</p>
+                </div>
+            </div>    
+            <a href="#" class="cart-image">
+                <img src="img/cart.svg" width="20" height="19">
+                <span class="items-number">3</span>
+                <p>Корзина</p>
+            </a>
+            
+        </nav>    
+    </header>
+    <main>
+        <section class="hero">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider__item slide1">
+                        <h2 class="h1">Лучшие диетологи</h2>
+                        <p class="hero-text">Подберут меню под ваши потребности</p>
+                        <div class="order-button__wrapper"><a class="to-order" href="#connect-us-form">Заказать</a></div>
+                    </div>
+                    <div class="swiper-slide slider__item slide2">
+                        <h1 class="h1"><span>Детокс-</span>программа</h1>
+                        <p class="hero-text">комплексного очищения организма</p>
+                        <p class="hero-text">от <b>1099 </b>руб</p>
+                        <div class="order-button__wrapper"><a class="to-order" href="#connect-us-form">Заказать</a></div>
+                    </div>
+                    <div class="swiper-slide slider__item slide3">
+                        <h2 class="h1"><span>10 000 </span>счастливых клиентов</h2>
+                        <p class="hero-text">посетили наш ресторан</p>
+                        
+                        <div class="order-button__wrapper"><a class="to-order" href="#connect-us-form">Заказать</a></div>
+                    </div>
+                    <div class="swiper-slide slider__item slide4">
+                        <h2 class="h1">Ждём вас!</h2>
+                        <p class="hero-text">У нас можно забронировать мероприятие. </p>
+                        <p class="hero-text">от <b>10999 </b>руб</p>
+                        <div class="order-button__wrapper"><a class="to-order" href="#connect-us-form">Заказать</a></div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination">
+                </div>
+            
+            </div>
+        </section>
+        <section class="advantages">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <ul class="advantages-list">
+                <li class="advantages__item">
+                    <img src="img/vegetables.png" alt="иконка с сочными овощами" width="90" height="91">
+                    <p class="advantages-text">Используем только<br> натуральные продукты,<br> блюда без консервантов и<br> искусственных добавок.</p>
+                </li>
+                <li class="advantages__item">
+                    <img src="img/menu_list.png" alt="иконка списка полезных продуктов" width="90" height="91">
+                    <p class="advantages-text">Сбалансированное<br> здоровое меню,<br> соответствующее КБЖУ</p>
+                </li>
+                <li class="advantages__item">
+                    <img src="img/training_plan-pic.png" alt="иконка списка тренировок" width="90" height="91">
+                    <p class="advantages-text">По желанию подберем программу <br>тренировок и составим<br> индивидуальное КБЖУ для<br> любого уровня подготовки.</p>
+                </li>
+                <li class="advantages__item">
+                    <img src="img/products-delivery.png" alt="иконка доставки продуктов" width="90" height="91">
+                    <p class="advantages-text">Бесплатная доставка, чтобы <br>сэкономить массу времени и <br>сил для более важных и <br>приятных дел.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="diets-menu">
+            <div class="diets_wrapper">
+                <h2>Рационы</h2>
+                <ul class="diets-list">
+                    <li class="menu-item">
+                        <img src="img/balance-img.jpg" alt="Блюда ПП" width="280" height="280">
+                        <h3>Баланс</h3>
+                        <p class="diet-dishes_description">Здоровое питание на каждый день<br> для тех, кто  заботится о своем<br> ежедневном рационе.</p>
+                        <p class="calorage">~1 800 ккал</p>
+                        <div class="price__wrapper">
+                            <p class="price">1 190 ₽</p>
+                            <button type="button" name="choose" class="choose">Выбрать</button>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="img/light-img.jpg" alt="Блюда ПП" width="280" height="280">
+                        <h3>ЛАЙТ</h3>
+                        <p class="diet-dishes_description">Четырехразовое меню для похудения,<br> поддержания формы и создания<br> рельефа.</p>
+                        <p class="calorage">~1 400 ккал</p>
+                        <div class="price__wrapper">
+                            <p class="price">1 050 ₽</p>
+                            <button type="button" name="choose" class="choose">Выбрать</button>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="img/super-light-img.jpg" alt="Блюда ПП" width="280" height="280">
+                        <h3>Супер лайт</h3>
+                        <p class="diet-dishes_description">Быстрое похудение и поддержание <br>формы. Трехразовое меню для быстрого<br> снижения веса без спорта.</p>
+                        <p class="calorage">~900 ккал</p>
+                        <div class="price__wrapper">
+                            <p class="price">890 ₽</p>
+                            <button type="button" name="choose" class="choose">Выбрать</button>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="img/mass-img.jpg" alt="Блюда ПП" width="280" height="280">
+                        <h3>масс</h3>
+                        <p class="diet-dishes_description">Сбалансированное питание для<br> поддержания оптимальной формы при<br> тренировках.</p>
+                        <p class="calorage">~1 800 ккал</p>
+                        <div class="price__wrapper">
+                            <p class="price">1 490 ₽</p>
+                            <button type="button" name="choose" class="choose">Выбрать</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="about_us">
+            <div class="about-us__wrapper">
+                <img src="img/about.jpg" alt="девушка-поварт готовит здоровую еду" >
+                <div class="about-us__description">
+                    <h2>о нас</h2>
+                    <p class="about-text">Добро пожаловать в наш ресторан, где здоровье и вкус идут рука об руку! Мы специализируемся на детокс-еды, предлагая разнообразные блюда, приготовленные из свежих, натуральных и органических ингредиентов. </p>
+                    <p class="about-text">Наша миссия — обеспечить вас не только вкусной, но и полезной пищей, которая поможет вам чувствовать себя легче и энергичнее. Каждое блюдо разрабатывается с вниманием к уникальным свойствам продуктов, чтобы гармонизировать ваше тело и разум. Приходите к нам в уютную атмосферу и откройте для себя новый мир здорового питания, где каждый укус — это шаг к вашему благополучию!</p>
+                </div>
+            </div>
+        </section>
+        <section class="delivery">
+            <div class="delivery__wrapper">
+                <div class="delivery-info">
+                    <h2>Условия доставки</h2>
+                    <p class="delivery-terms_text">Мы предлагаем быструю и удобную доставку ваших любимых блюд прямо к вашему дверному порогу. Закажите онлайн и наслаждайтесь здоровым питанием без лишних хлопот. </p>
+                    <p class="delivery-terms_text">Доставка осуществляется ежедневно с 9:00 до 21:00. Минимальная сумма заказа — 500 рублей.</p>
+                    <button id="connect-us-form" class="connect-us">Связаться с нами</button>
+                </div>
+                <div class="map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A398fca3fc7ccfa6ab0fcb372c86118365543f8167643fabf9dd6b9e12974e05b&amp;source=constructor" width="582" height="466" frameborder="0"></iframe>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="footer__wrapper">
+            <div class="footer-links">
+                <img class="logo" src="img/footer-logo.svg" width="130" height="36">
+                <div class="links__wrapper">
+                    <p class="footer-link">
+                        <a href="#">Контакты</a>
+                    </p>
+                    <p class="footer-link">
+                        <a href="#">Оплата</a>
+                    </p>
+                    <p class="footer-link">
+                        <a href="#">Публичная оферта</a>
+                    </p>
+                    <p class="footer-link">
+                        <a href="#">О компании</a>
+                    </p>
+                    <p class="footer-link">
+                        <a href="#">Доставка</a>
+                    </p>
+                    <p class="footer-link">
+                        <a href="#">Политика конфиденциальности</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            
+            <div class="footer-policy-and-link">
+                <div class="footer-policy">
+                    <img src="img/© 2022.svg" alt="копирайт 2022" width="48" height="21">
+                    <p class="cookies-policy">Мы используем cookies для быстрой и удобной работы сайта. Продолжая пользоваться сайтом, вы принимаете условия обработки персональных данных</p>
+                </div>
+                <a href="#" class="link-to-instagram"><img src="img/instagram-logo.svg" alt="инстаграм" width="20" height="20"></a>
+            </div>
+        </div>
+    </footer>
+    <div class="feedback__modal "></div>
+    <section class="feedback__section ">
+        <form>
+            <button class="feedback-exit-button" type="button" aria-label="Закрывает модальное окно">
+                <img class="feedback-exit-icon" src="img/close.svg" width="24" height="24" alt="Закрыть модальное окно">
+            </button>
+            <h3>Форма обратной связи</h3>
+            <label for="name">Ваше имя <span class="star-style">*</span></label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="name">Телефон <span class="star-style">*</span></label>
+            <input type="tel" id="phone" name="phone" required>
+            <button type="button" class="send-form__button">Отправить</button>
+            <p class="form-alert__message">Нажимая на кнопку, вы соглашаетесь на обработку <span class="personal-data">персональных данных</span></p>
+            </form>
+    </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>
