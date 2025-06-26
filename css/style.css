@@ -642,6 +642,26 @@ h2.visually-hidden {
     cursor: pointer;
 }
 
+/*.feedback-exit-button::after,
+.feedback-exit-button::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 26px;
+    height: 2px;
+    margin: -13px -3px;
+    background-color: #B8B8B8;
+}
+
+.feedback-exit-button::before {
+    transform: rotate(45deg);
+}
+
+.feedback-exit-button::after {
+    transform: rotate(-45deg);
+}*/
+
 .visually-hidden {
     display: none;
 }
