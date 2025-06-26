@@ -631,6 +631,7 @@ h2.visually-hidden {
 
 .personal-data {
     color: #6CB71D;
+    text-decoration: none;
 }
 
 .feedback-exit-button {
