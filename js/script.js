@@ -50,3 +50,30 @@ closePopupButton.addEventListener('click', function() {
   modalWindow.classList.remove('active')
   popup.classList.remove('active')
 })
+
+/*Маска телефона*/
+
+document.addEventListener('DOMContentLoaded', function() {
+            const phoneInput = document.getElementById('phone');
+
+            phoneInput.addEventListener('input', function () {
+                let value = this.value.replace(/\D/g, ''); // Убираем все нецифровые символы
+                if (value.length > 11) {
+                    value = value.slice(0, 11); // Ограничиваем до 10 цифр
+                }
+
+                const maskedValue = createPhoneMask(value);
+                this.value = maskedValue;
+            });
+
+            function createPhoneMask(value) {
+                const countryCode = '+7 ';
+                const areaCode = value.length > 1 ? `(${value.slice(1, 4)}) ` : `(${value.slice(1)}`;
+                const nextThree = value.length > 4 ? `${value.slice(4, 7)}-` : '';
+                const nextTwo = value.length > 7 ? `${value.slice(7, 9)}-` : '';
+                const lastTwo = value.length > 9 ? `${value.slice(9, 11)}` : '';
+
+                // Форматируем окончательный номер
+                return countryCode + areaCode + nextThree + nextTwo + lastTwo;
+            }
+        });
